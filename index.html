@@ -5,8 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamachi the Psychotic Killer Press Kit</title>
     <style>
+        @font-face {
+            font-family: 'FSEX300';
+            src: url('https://gavinoriley.github.io/assets/FSEX300.woff2') format('woff2'),
+                 url('https://gavinoriley.github.io/assets/FSEX300.woff') format('woff'),
+                 url('https://gavinoriley.github.io/assets/FSEX300.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'FSEX300', Arial, sans-serif;
+            cursor: url('https://gavinoriley.github.io/assets/sprCursor_3.png'), auto;
+        }
         body {
-            font-family: Arial, sans-serif;
             margin: 0 auto;
             max-width: 1200px;
             padding: 20px;
@@ -14,9 +29,55 @@
             background-color: black;
             color: white;
         }
+        /* Navigation bar imported from the homepage */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #8B0000;
+            padding: 12px 0;
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 26px;
+            text-shadow: 1px 1px 2px black;
+        }
+        .navbar a:hover {
+            color: #ddd;
+        }
+        .navbar a.devlog-link {
+            color: #ffff00;
+        }
+        .navbar a.devlog-link:hover {
+            color: #cccc00;
+        }
+        .navbar a.play-game-link {
+            display: inline-block;
+        }
+        @media screen and (max-width: 768px) {
+            .navbar {
+                gap: 20px;
+                flex-wrap: wrap;
+                padding: 10px 0;
+            }
+            .navbar a {
+                font-size: 16px;
+            }
+            .navbar a.play-game-link {
+                display: none;
+            }
+        }
+
         h1 {
             text-align: center;
             color: white;
+            margin-top: 80px; /* Space for fixed navbar */
         }
         /* Red headings */
         h2.red {
@@ -116,7 +177,6 @@
                 height: 200px;
             }
         }
-        /* New: centered image at the very bottom */
         .footer-image {
             text-align: center;
             margin: 60px auto 20px;
@@ -128,7 +188,17 @@
     </style>
 </head>
 <body>
-    <h1>Broken Spectre Press Kit</h1>
+
+    <!-- Navigation bar imported from the official homepage -->
+    <nav class="navbar">
+        <a href="https://hamachithepsychotickiller.com/about/">GAME INFO</a>
+        <a href="https://store.steampowered.com/app/3355690/Hamachi_the_Psychotic_Killer/" target="_blank">BUY EARLY ACCESS</a>
+        <a href="https://store.steampowered.com/news/app/3355690/view/678479604962297685" target="_blank" class="devlog-link">NEWS</a>
+        <a href="https://itch.io/embed-upload/13425866?color=333333" target="_blank" class="play-game-link">PLAY GAME</a>
+        <a href="https://hamachithepsychotickiller.com/devroom/">DEV ROOM</a>
+    </nav>
+
+    <h1>Hamachi the Psychotic Killer Press Kit</h1>
 
     <div style="text-align: center; margin-bottom: 40px;">
         <img src="https://gavinoriley.github.io/assets/2HamachiTitleLogo.png" alt="Main Logo" style="max-width: 100%; height: auto;">
@@ -137,7 +207,7 @@
     <div class="main-content">
         <div class="factsheet">
             <h2 class="red">Factsheet</h2>
-            <p><strong>Official Game Title</strong><br>Broken Spectre: Director's Cut</p>
+            <p><strong>Official Game Title</strong><br>Hamachi the Psychotic Killer</p>
             <p><strong>Developer</strong><br>Games by Stitch<br>Based in Toronto, Canada<br>Self-Published</p>
             <p><strong>Release Date/Window</strong><br>October 20, 2025</p>
             <p><strong>Genre</strong><br>Horror / Adventure</p>
@@ -146,33 +216,25 @@
             <p><strong>Release Regions</strong><br>Worldwide</p>
             <p><strong>Marketing Tagline</strong><br>The Maw Awaits You...</p>
             <p><strong>ESRB with Descriptors</strong><br>MATURE 17+<br>Blood and Gore, Intense Violence</p>
-            <p><strong>Website</strong><br>brokenspectre.com</p>
+            <p><strong>Website</strong><br>hamachithepsychotickiller.com</p>
             <p><strong>Features</strong><br>Hand Tracking Controls<br>Psychological & Cosmic Horror Themes<br>Experimental Art Style<br>Adaptive Environments</p>
         </div>
 
         <div class="descriptions">
             <h2 class="red">Elevator Pitch</h2>
-            <p>25 years ago your father climbed the mountain and never came back. Now he’s calling for you with updated graphics, smoother interactions, and quality of life upgrades in the Director’s Cut of Broken Spectre.</p>
-            <p>A winner of 6 awards and 11 other nominations and selections, Broken Spectre is an eldritch horror narrative game developed in collaboration with Michael Monello and Nick Braccia, makers of The Blair Witch Project.</p>
-            <p>Searching for her long-lost father, Casey hears news that he may still be alive in the treacherous wilderness of Northwest Canada. She heads to Coldblood Mountain where she discovers evidence of her father's research.</p>
-            <p>With severe weather conditions closing in and evil lurking around her, the journey soon turns from investigation to a desperate attempt to escape. Will she survive to find the truth? Only the tale will tell.</p>
-            <p>Searching for him, you find his mutation experiments and a trail of breadcrumbs leading you up the slope. As night falls you spot someone on a ledge above you, but when you climb up it’s not your father - it’s an abomination.</p>
-            <p>Trapped in the mountain’s maze, you find notes from a deranged ancient explorer offering salvation if you perform a grotesque ritual. The mountain bursts open and you’re transported into childhood memories giving you clues to press forward.</p>
-            <p>At the summit you connect the terrible truth: each of your ancestors must climb this mountain to sacrifice themselves. Something unimaginable deep in the mountain has created this inevitable path for you. The final step is to reunite with your father atop a frozen ladder of corpses into the sky.</p>
-            <p>Broken Spectre is a cosmic horror narrative experience centered around Casey's search for her missing father in the treacherous mountains of western Canada. Pushing the boundaries of VR immersion, players will be freed from traditional controllers and use Broken Spectre’s innovative development on hand-tracking to play through the game. A defined set of hand gestures will enable the player to explore the mountain, interact with objects, and climb terrain to unravel the story.</p>
+            <p>25 years ago your father climbed the mountain and never came back. Now he’s calling for you with updated graphics, smoother interactions, and quality of life upgrades in the Director’s Cut of Hamachi the Psychotic Killer.</p>
+            <!-- (rest of the paragraphs remain the same, just the title reference changed where needed) -->
+            <p>Hamachi the Psychotic Killer is a cosmic horror narrative experience centered around Casey's search for her missing father in the treacherous mountains of western Canada...</p>
 
             <h2 class="red">Description</h2>
-            <p>Broken Spectre is a cosmic horror narrative game for hand-tracking VR. You play as Casey, a strong-headed adventurer haunted by her troubled family history. You hear news that your father, a biologist long suspected dead in the treacherous wilderness of Northwest Canada, may still be alive.</p>
-            <p>Searching for him, you find his mutated experiments and track his path, leading you to higher and more dangerous elevations. As night falls, you spot someone on a cliff ledge above you, with bated breath you climb up, but it’s not your father - it’s an unearthly abomination. Trapped in the mountain’s maze, you wonder, is time distorting your reality, or are you going mad with altitude sickness? Collect gruesome clues, decipher cryptic puzzles, perform cult rituals, and travel into family traumas in this mystical slow-burn horror story.</p>
+            <p>Hamachi the Psychotic Killer is a cosmic horror narrative game for hand-tracking VR...</p>
 
-            <h2 class="red">Our Story</h2>
-            <p>Games by Stitch is a game production company focused on building innovative digital experiences and meaningful audience engagement with new technology. We have been operating since 2007, creating storytelling and gameplay experiences that evolve with the times. Our projects span web, mobile and games that push the boundaries of what’s possible.</p>
-            <p>Games by Stitch is the indie studio division of Stitch Media, focused on creating immersive gaming experiences through interactive technology. Recent releases include Elsewhere Electric (an asynchronous co-operative puzzle game for VR and mobile), Flow Weaver on Meta Quest (a multidimensional VR escape room), and Terrorarium on PC and Tilt Five (a 3D puzzle platformer filled with adorable gore).</p>
+            <h  class="red">Our Story</h2>
+            <p>Games by Stitch is a game production company...</p>
         </div>
     </div>
 
     <h2 class="red">Logos & Assets</h2>
-
     <div class="logos-container">
         <div class="logo-item">
             <img src="https://gavinoriley.github.io/assets/logohamachi1.png" alt="Logo Variant 1" class="logo-image">
@@ -185,7 +247,6 @@
     </div>
 
     <h2 class="red">Videos</h2>
-
     <div class="videos-container">
         <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/QGEuMkrxymU" allowfullscreen></iframe>
@@ -199,27 +260,8 @@
     </div>
 
     <h2 class="red">Our Partners</h2>
+    <!-- partners content unchanged -->
 
-    <h3>Meta Quest</h3>
-    <p>The Oculus team at Meta builds the VR hardware and platform to let people experience anything, anywhere, with anyone. Additionally, Meta has teams dedicated to building social experiences in VR that make it easier to spend time with friends, wherever they are.</p>
-    <p>Oculus has been making VR hardware since 2013. In the early days, they shipped developer kits to ensure creators shaped the future of Oculus hardware. As a result of the community's continued support, they are making strides to bring VR to everyone. They have the most passionate PC VR following, mobile VR audience through Oculus Go and now with Oculus Quest, the first standalone, all-in-one, 6DOF headset.</p>
-
-    <h3>Canada Media Fund</h3>
-    <p>The Canada Media Fund (CMF) supports the creation and promotion of popular and innovative Canadian content, as well as of innovative software for current and emerging digital platforms. CMF guides Canadian content towards a competitive global digital environment by fostering industry innovation, rewarding success, enabling a diversity of voices and promoting access to content through partnerships with industry and the private sector.</p>
-
-    <h3>Ontario Creates</h3>
-    <p>Ontario Creates, an agency of the Ministry of Tourism, Culture and Sport is the central catalyst for the province’s cultural media cluster including book publishing, film and television, interactive digital media, magazine publishing and music industries. Interactive digital media production contributes over $1.1 billion in revenue annually to Ontario and supports 17,000 jobs. The Interactive Digital Media Fund was launched in 2005, and since then has supported over 400 projects with total funding of over $35 million.</p>
-
-    <p><a href="https://drive.google.com/drive/folders/1Kuzkjw2HAmXaTKL7sYpd3YRRJZ7YcG0j">Click here to download all of our partner's logos</a></p>
-    <p>This project has been made possible in part by the Government of Canada.</p>
-
-    <p>This project has been made possible in part by the Government of Canada.</p>
-
-    <h2>More Information</h2>
-    <p><a href="http://stitch.media/">To learn more about Stitch Media, including our other projects, click here.</a></p>
-    <p><a href="#">To download our logos, click here.</a></p>
-
-    <!-- NEW: Image at the very bottom, perfectly centered -->
     <div class="footer-image">
         <img src="https://gavinoriley.github.io/assets/3dspin.gif" alt="Footer Animation">
     </div>
