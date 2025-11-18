@@ -46,7 +46,7 @@
         }
         .descriptions {
             flex: 1 1 60%;
-            padding-right: 20px;
+            padding-left: 20px;
         }
         .factsheet {
             flex: 1 1 35%;
@@ -59,11 +59,39 @@
                 flex-direction: column;
             }
             .descriptions {
-                padding-right: 0;
+                padding-left: 0;
+                order: 2;
             }
             .factsheet {
-                margin-top: 20px;
+                margin-bottom: 20px;
+                order: 1;
             }
+        }
+        .logos-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .logo-image {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+        }
+        .download-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: purple;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .download-button:hover {
+            background-color: #800080;
         }
     </style>
 </head>
@@ -75,8 +103,23 @@
         <img src="https://gavinoriley.github.io/assets/2HamachiTitleLogo.png" alt="Main Logo" style="max-width: 100%; height: auto;">
     </div>
 
-    <!-- Restructured content: Descriptions next to Factsheet -->
+    <!-- Restructured content: Factsheet on the left, Descriptions on the right -->
     <div class="main-content">
+        <div class="factsheet">
+            <h2>Factsheet</h2>
+            <p><strong>Official Game Title</strong><br>Broken Spectre: Director's Cut</p>
+            <p><strong>Developer</strong><br>Games by Stitch<br>Based in Toronto, Canada<br>Self-Published</p>
+            <p><strong>Release Date/Window</strong><br>October 20, 2025</p>
+            <p><strong>Genre</strong><br>Horror / Adventure</p>
+            <p><strong>Platforms</strong><br>Available on Meta Quest</p>
+            <p><strong>Number of Players</strong><br>Single Player</p>
+            <p><strong>Release Regions</strong><br>Worldwide</p>
+            <p><strong>Marketing Tagline</strong><br>The Maw Awaits You...</p>
+            <p><strong>ESRB with Descriptors</strong><br>MATURE 17+<br>Blood and Gore, Intense Violence</p>
+            <p><strong>Website</strong><br>brokenspectre.com</p>
+            <p><strong>Features</strong><br>Hand Tracking Controls<br>Psychological & Cosmic Horror Themes<br>Experimental Art Style<br>Adaptive Environments</p>
+        </div>
+
         <div class="descriptions">
             <h2>Elevator Pitch</h2>
             <p>25 years ago your father climbed the mountain and never came back. Now he’s calling for you with updated graphics, smoother interactions, and quality of life upgrades in the Director’s Cut of Broken Spectre.</p>
@@ -96,29 +139,18 @@
             <p>Games by Stitch is a game production company focused on building innovative digital experiences and meaningful audience engagement with new technology. We have been operating since 2007, creating storytelling and gameplay experiences that evolve with the times. Our projects span web, mobile and games that push the boundaries of what’s possible.</p>
             <p>Games by Stitch is the indie studio division of Stitch Media, focused on creating immersive gaming experiences through interactive technology. Recent releases include Elsewhere Electric (an asynchronous co-operative puzzle game for VR and mobile), Flow Weaver on Meta Quest (a multidimensional VR escape room), and Terrorarium on PC and Tilt Five (a 3D puzzle platformer filled with adorable gore).</p>
         </div>
-
-        <div class="factsheet">
-            <h2>Factsheet</h2>
-            <p><strong>Official Game Title</strong><br>Broken Spectre: Director's Cut</p>
-            <p><strong>Developer</strong><br>Games by Stitch<br>Based in Toronto, Canada<br>Self-Published</p>
-            <p><strong>Release Date/Window</strong><br>October 20, 2025</p>
-            <p><strong>Genre</strong><br>Horror / Adventure</p>
-            <p><strong>Platforms</strong><br>Available on Meta Quest</p>
-            <p><strong>Number of Players</strong><br>Single Player</p>
-            <p><strong>Release Regions</strong><br>Worldwide</p>
-            <p><strong>Marketing Tagline</strong><br>The Maw Awaits You...</p>
-            <p><strong>ESRB with Descriptors</strong><br>MATURE 17+<br>Blood and Gore, Intense Violence</p>
-            <p><strong>Website</strong><br>brokenspectre.com</p>
-            <p><strong>Features</strong><br>Hand Tracking Controls<br>Psychological & Cosmic Horror Themes<br>Experimental Art Style<br>Adaptive Environments</p>
-        </div>
     </div>
 
     <h2>Logos & Assets</h2>
-    <!-- Formatted correctly as shown on the webpage – assuming a section header -->
+    <!-- Two images next to each other in the logo placeholder area -->
+    <div class="logos-container">
+        <img src="https://gavinoriley.github.io/assets/logohamachi1.png" alt="Logo 1" class="logo-image">
+        <img src="https://gavinoriley.github.io/assets/logohamachi1.png" alt="Logo 2" class="logo-image">
+    </div>
 
-    <!-- Two blank spaces for the logo and assets -->
-    <div class="placeholder">Logo Placeholder</div>
-    <div class="placeholder">Assets Placeholder</div>
+    <!-- Purple download button under both images -->
+    <!-- Assuming the button downloads one of the images; using the first one as an example. Adjust if needed. -->
+    <a href="https://gavinoriley.github.io/assets/logohamachi1.png" download class="download-button">Download</a>
 
     <!-- Two blank spaces under this for two videos -->
     <div class="placeholder">Video 1 Placeholder</div>
