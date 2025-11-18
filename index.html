@@ -70,25 +70,30 @@
         .logos-container {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-end;
             flex-wrap: wrap;
-            margin: 20px 0;
+            gap: 40px;
+            margin: 40px 0;
+        }
+        .logo-item {
+            text-align: center;
         }
         .logo-image {
-            width: 200px;
+            width: 350px;  /* Made larger */
             height: auto;
-            margin: 10px;
+            display: block;
         }
         .download-button {
             display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
+            margin: 15px auto 0;
+            padding: 12px 24px;
             background-color: purple;
             color: white;
             text-align: center;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
+            width: 150px;
         }
         .download-button:hover {
             background-color: #800080;
@@ -98,12 +103,12 @@
 <body>
     <h1>Broken Spectre Press Kit</h1>
 
-    <!-- Insert main logo under the title -->
+    <!-- Main title logo -->
     <div style="text-align: center; margin-bottom: 40px;">
         <img src="https://gavinoriley.github.io/assets/2HamachiTitleLogo.png" alt="Main Logo" style="max-width: 100%; height: auto;">
     </div>
 
-    <!-- Restructured content: Factsheet on the left, Descriptions on the right -->
+    <!-- Factsheet on the left, Descriptions on the right -->
     <div class="main-content">
         <div class="factsheet">
             <h2>Factsheet</h2>
@@ -142,26 +147,29 @@
     </div>
 
     <h2>Logos & Assets</h2>
-    <!-- Two images next to each other in the logo placeholder area -->
+
+    <!-- Two different logos with individual download buttons -->
     <div class="logos-container">
-        <img src="https://gavinoriley.github.io/assets/logohamachi1.png" alt="Logo 1" class="logo-image">
-        <img src="https://gavinoriley.github.io/assets/logohamachi2.png" alt="Logo 2" class="logo-image">
+        <div class="logo-item">
+            <img src="https://gavinoriley.github.io/assets/logohamachi1.png" alt="Logo Variant 1" class="logo-image">
+            <a href="https://gavinoriley.github.io/assets/logohamachi1.png" download class="download-button">Download</a>
+        </div>
+        <div class="logo-item">
+            <img src="https://gavinoriley.github.io/assets/logohamachi2.png" alt="Logo Variant 2" class="logo-image">
+            <a href="https://gavinoriley.github.io/assets/logohamachi2.png" download class="download-button">Download</a>
+        </div>
     </div>
 
-    <!-- Purple download button under both images -->
-    <!-- Assuming the button downloads one of the images; using the first one as an example. Adjust if needed. -->
-    <a href="https://gavinoriley.github.io/assets/logohamachi1.png" download class="download-button">Download</a>
-
-    <!-- Two blank spaces under this for two videos -->
+    <!-- Video placeholders -->
     <div class="placeholder">Video 1 Placeholder</div>
     <div class="placeholder">Video 2 Placeholder</div>
 
-    <!-- The formatted text for Our Partners -->
+    <!-- Our Partners -->
     <h2>Our Partners</h2>
 
     <h3>Meta Quest</h3>
     <p>The Oculus team at Meta builds the VR hardware and platform to let people experience anything, anywhere, with anyone. Additionally, Meta has teams dedicated to building social experiences in VR that make it easier to spend time with friends, wherever they are.</p>
-    <p>Oculus has been making VR hardware since 2013. In the early days, they shipped developer kits to ensure creators shaped the future of Oculus hardware. As a result of the community's continued support, they are making strides to bring VR to everyone. They have the most passionate PC VR following with the Oculus Rift S + Touch and the largest, mobile VR audience through Oculus Go and now with Oculus Quest, the first standalone, all-in-one, 6DOF headset.</p>
+    <p>Oculus has been making VR hardware since 2013. In the early days, they shipped developer kits to ensure creators shaped the future of Oculus hardware. As a result of the community's continued support, they are making strides to bring VR to everyone. They have the most passionate PC VR following, mobile VR audience through Oculus Go and now with Oculus Quest, the first standalone, all-in-one, 6DOF headset.</p>
 
     <h3>Canada Media Fund</h3>
     <p>The Canada Media Fund (CMF) supports the creation and promotion of popular and innovative Canadian content, as well as of innovative software for current and emerging digital platforms. CMF guides Canadian content towards a competitive global digital environment by fostering industry innovation, rewarding success, enabling a diversity of voices and promoting access to content through partnerships with industry and the private sector.</p>
@@ -174,7 +182,7 @@
 
     <h2>More Information</h2>
     <p><a href="http://stitch.media/">To learn more about Stitch Media, including our other projects, click here.</a></p>
-    <p><a href="#">To download our logos, click here.</a> <!-- Placeholder link; update with actual URL if available --></p>
+    <p><a href="#">To download our logos, click here.</a></p>
 
 </body>
 </html>
