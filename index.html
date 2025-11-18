@@ -18,8 +18,13 @@
             text-align: center;
             color: white;
         }
-        h2 {
-            color: white;
+        /* Red headings */
+        h2.red {
+            color: #ff3333;
+        }
+        /* Purple factsheet labels */
+        .factsheet strong {
+            color: #cc33ff;
         }
         p {
             margin: 10px 0;
@@ -111,20 +116,27 @@
                 height: 200px;
             }
         }
+        /* New: centered image at the very bottom */
+        .footer-image {
+            text-align: center;
+            margin: 60px auto 20px;
+        }
+        .footer-image img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
     <h1>Broken Spectre Press Kit</h1>
 
-    <!-- Main title logo -->
     <div style="text-align: center; margin-bottom: 40px;">
         <img src="https://gavinoriley.github.io/assets/2HamachiTitleLogo.png" alt="Main Logo" style="max-width: 100%; height: auto;">
     </div>
 
-    <!-- Factsheet on the left, Descriptions on the right -->
     <div class="main-content">
         <div class="factsheet">
-            <h2>Factsheet</h2>
+            <h2 class="red">Factsheet</h2>
             <p><strong>Official Game Title</strong><br>Broken Spectre: Director's Cut</p>
             <p><strong>Developer</strong><br>Games by Stitch<br>Based in Toronto, Canada<br>Self-Published</p>
             <p><strong>Release Date/Window</strong><br>October 20, 2025</p>
@@ -139,7 +151,7 @@
         </div>
 
         <div class="descriptions">
-            <h2>Elevator Pitch</h2>
+            <h2 class="red">Elevator Pitch</h2>
             <p>25 years ago your father climbed the mountain and never came back. Now he’s calling for you with updated graphics, smoother interactions, and quality of life upgrades in the Director’s Cut of Broken Spectre.</p>
             <p>A winner of 6 awards and 11 other nominations and selections, Broken Spectre is an eldritch horror narrative game developed in collaboration with Michael Monello and Nick Braccia, makers of The Blair Witch Project.</p>
             <p>Searching for her long-lost father, Casey hears news that he may still be alive in the treacherous wilderness of Northwest Canada. She heads to Coldblood Mountain where she discovers evidence of her father's research.</p>
@@ -149,19 +161,18 @@
             <p>At the summit you connect the terrible truth: each of your ancestors must climb this mountain to sacrifice themselves. Something unimaginable deep in the mountain has created this inevitable path for you. The final step is to reunite with your father atop a frozen ladder of corpses into the sky.</p>
             <p>Broken Spectre is a cosmic horror narrative experience centered around Casey's search for her missing father in the treacherous mountains of western Canada. Pushing the boundaries of VR immersion, players will be freed from traditional controllers and use Broken Spectre’s innovative development on hand-tracking to play through the game. A defined set of hand gestures will enable the player to explore the mountain, interact with objects, and climb terrain to unravel the story.</p>
 
-            <h2>Description</h2>
+            <h2 class="red">Description</h2>
             <p>Broken Spectre is a cosmic horror narrative game for hand-tracking VR. You play as Casey, a strong-headed adventurer haunted by her troubled family history. You hear news that your father, a biologist long suspected dead in the treacherous wilderness of Northwest Canada, may still be alive.</p>
             <p>Searching for him, you find his mutated experiments and track his path, leading you to higher and more dangerous elevations. As night falls, you spot someone on a cliff ledge above you, with bated breath you climb up, but it’s not your father - it’s an unearthly abomination. Trapped in the mountain’s maze, you wonder, is time distorting your reality, or are you going mad with altitude sickness? Collect gruesome clues, decipher cryptic puzzles, perform cult rituals, and travel into family traumas in this mystical slow-burn horror story.</p>
 
-            <h2>Our Story</h2>
+            <h2 class="red">Our Story</h2>
             <p>Games by Stitch is a game production company focused on building innovative digital experiences and meaningful audience engagement with new technology. We have been operating since 2007, creating storytelling and gameplay experiences that evolve with the times. Our projects span web, mobile and games that push the boundaries of what’s possible.</p>
             <p>Games by Stitch is the indie studio division of Stitch Media, focused on creating immersive gaming experiences through interactive technology. Recent releases include Elsewhere Electric (an asynchronous co-operative puzzle game for VR and mobile), Flow Weaver on Meta Quest (a multidimensional VR escape room), and Terrorarium on PC and Tilt Five (a 3D puzzle platformer filled with adorable gore).</p>
         </div>
     </div>
 
-    <h2>Logos & Assets</h2>
+    <h2 class="red">Logos & Assets</h2>
 
-    <!-- Logos with individual download buttons -->
     <div class="logos-container">
         <div class="logo-item">
             <img src="https://gavinoriley.github.io/assets/logohamachi1.png" alt="Logo Variant 1" class="logo-image">
@@ -173,9 +184,8 @@
         </div>
     </div>
 
-    <h2>Videos</h2>
+    <h2 class="red">Videos</h2>
 
-    <!-- Three YouTube videos side-by-side (responsive) -->
     <div class="videos-container">
         <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/QGEuMkrxymU" allowfullscreen></iframe>
@@ -188,8 +198,7 @@
         </div>
     </div>
 
-    <!-- Our Partners -->
-    <h2>Our Partners</h2>
+    <h2 class="red">Our Partners</h2>
 
     <h3>Meta Quest</h3>
     <p>The Oculus team at Meta builds the VR hardware and platform to let people experience anything, anywhere, with anyone. Additionally, Meta has teams dedicated to building social experiences in VR that make it easier to spend time with friends, wherever they are.</p>
@@ -204,9 +213,16 @@
     <p><a href="https://drive.google.com/drive/folders/1Kuzkjw2HAmXaTKL7sYpd3YRRJZ7YcG0j">Click here to download all of our partner's logos</a></p>
     <p>This project has been made possible in part by the Government of Canada.</p>
 
+    <p>This project has been made possible in part by the Government of Canada.</p>
+
     <h2>More Information</h2>
     <p><a href="http://stitch.media/">To learn more about Stitch Media, including our other projects, click here.</a></p>
     <p><a href="#">To download our logos, click here.</a></p>
+
+    <!-- NEW: Image at the very bottom, perfectly centered -->
+    <div class="footer-image">
+        <img src="https://gavinoriley.github.io/assets/3dspin.gif" alt="Footer Animation">
+    </div>
 
 </body>
 </html>
