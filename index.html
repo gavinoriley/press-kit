@@ -104,6 +104,18 @@
         }
         .footer-image { text-align: center; margin: 60px auto 20px; }
         .footer-image img { max-width: 100%; height: auto; }
+
+        /* Added for rounded main title logo */
+        .rounded-logo {
+            border-radius: 30px;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .rounded-logo img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -115,9 +127,14 @@
         <a href="https://hamachithepsychotickiller.com/devroom/">DEV ROOM</a>
     </nav>
     <h1>Hamachi the Psychotic Killer Press Kit</h1>
+    
+    <!-- Main title logo with rounded corners -->
     <div style="text-align: center; margin-bottom: 50px;">
-        <img src="https://gavinoriley.github.io/assets/2HamachiTitleLogo.png" alt="Main Logo" style="max-width: 100%; height: auto;">
+        <div class="rounded-logo">
+            <img src="https://gavinoriley.github.io/assets/2HamachiTitleLogo.png" alt="Main Logo">
+        </div>
     </div>
+
     <!-- Side-by-side Factsheet & Elevator Pitch / Description / Our Story -->
     <div class="top-section">
         <div class="factsheet-block">
@@ -132,7 +149,7 @@
             <p><strong>Marketing Tagline</strong><br>The platformer game where you can play as the BAD GUY. (or the good guy.)</p>
             <p><strong>Rating</strong><br>Blood and Gore, Violence</p>
             <p><strong>Website</strong><br><a href="https://hamachithepsychotickiller.com" style="color: red;">hamachithepsychotickiller.com</a></p>
-            <p><strong>Steam Page</strong><br><a href="https://hamachithepsychotickiller.com" style="color: red;">https://store.steampowered.com/app/3355690/Hamachi_the_Psychotic_Killer/</a></p>
+            <p><strong>Steam Page</strong><br><a href="https://store.steampowered.com/app/3355690/Hamachi_the_Psychotic_Killer/" style="color: red;">https://store.steampowered.com/app/3355690/Hamachi_the_Psychotic_Killer/</a></p>
             <p><strong>Features</strong><br>
                 <span class="feature-title">Play as the Villain.</span><br>
                 Control Hamachi and decide to Kill or Spare innocent lives.<br><br>
@@ -166,7 +183,7 @@
             <p>Three main routes — Pacifist, Neutral, and Genocide — plus a hidden ending ensure massive replay value. Killing attracts the police, turning your first encounter with the law into a high-stakes chase. Spare certain demonic bosses and they’ll join your party, bringing their assistance in the final battle on a True Pacifist route.</p>
             <p>Hand-drawn vibrant pixel art, a pumping original soundtrack, and a twisted sense of humor make this solo-dev passion project stand out in the horror-platformer genre.</p>
             <h2 class="red">Our Story</h2>
-            <p>Hamachi the Psychotic Killer is created by Gavin ORiley, an independent developer based in Los Angeles, USA. What started as an idea — “Normally you always play as the hero in platformer games, What if the roles were reversed and you were the bad guy?” — has grown into a full-fledged passion project packed with branching paths, recruitable bosses, and plenty of gore (or surprisingly wholesome moments).</p>
+            <p>Hamachi the Psychotic Killer is created by Gavin O'Riley, an independent developer based in Los Angeles, USA. What started as an idea — “Normally you always play as the hero in platformer games, What if the roles were reversed and you were the bad guy?” — has grown into a full-fledged passion project packed with branching paths, recruitable bosses, and plenty of gore (or surprisingly wholesome moments).</p>
             <p>Built almost entirely by one person, with occasional help from talented freelancers for music and additional art, the game is a love letter to classic platformers, morality systems, and over-the-top villainy.</p>
         </div>
     </div>
