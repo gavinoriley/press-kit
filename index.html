@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamachi the Psychotic Killer Press Kit</title>
     <style>
-        /* Custom font only for the navigation bar */
         @font-face {
             font-family: 'FSEX300';
             src: url('https://gavinoriley.github.io/assets/FSEX300.woff2') format('woff2'),
@@ -15,21 +14,12 @@
             font-style: normal;
             font-display: swap;
         }
-        /* Navigation bar uses the custom font */
-        .navbar,
-        .navbar a {
-            font-family: 'FSEX300', Arial, sans-serif;
-        }
-        /* Custom cursor site-wide */
-        * {
-            cursor: url('https://gavinoriley.github.io/assets/sprCursor_3.png'), auto;
-        }
-        /* Rest of the page uses clean font */
+        .navbar, .navbar a { font-family: 'FSEX300', Arial, sans-serif; }
+        * { cursor: url('https://gavinoriley.github.io/assets/sprCursor_3.png'), auto; }
         body {
             margin: 0 auto;
-            max-width: 1200px;
+            max-width: 1400px;
             padding: 20px;
-            line-height: 1.6;
             background-color: black;
             background-image: url('https://gavinoriley.github.io/assets/hamabackgrounddark.png');
             background-repeat: no-repeat;
@@ -39,7 +29,6 @@
             color: white;
             font-family: Arial, Helvetica, sans-serif;
         }
-        /* Navigation bar */
         .navbar {
             position: fixed;
             top: 0;
@@ -61,41 +50,66 @@
         .navbar a:hover { color: #ddd; }
         .navbar a.devlog-link { color: #ffff00; }
         .navbar a.devlog-link:hover { color: #cccc00; }
-        @media screen and (max-width: 768px) {
+        @media (max-width: 768px) {
             .navbar { gap: 20px; flex-wrap: wrap; padding: 10px 0; }
             .navbar a { font-size: 16px; }
             .navbar a.play-game-link { display: none; }
         }
-        h1 { text-align: center; color: white; margin-top: 80px; }
-        h2.red { color: #ff3333; }
+        h1 { text-align: center; color: white; margin-top: 90px; margin-bottom: 20px; }
+        h2.red { color: #ff3333; margin-top: 0; }
         .factsheet strong { color: #cc33ff; }
         .feature-title { color: #ffff00 !important; font-weight: bold; }
         a { color: #00bfff; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .main-content { display: flex; flex-wrap: wrap; justify-content: space-between; }
-        .descriptions { flex: 1 1 60%; padding-left: 20px; background-color: rgba(0,0,0,0.7); border-radius: 8px; padding: 20px; }
-        .factsheet { flex: 1 1 35%; background-color: rgba(0,0,0,0.7); padding: 20px; border-radius: 8px; }
-        @media (max-width: 768px) {
-            .main-content { flex-direction: column; }
-            .descriptions { padding-left: 0; order: 2; }
-            .factsheet { margin-bottom: 20px; order: 1; }
+
+        /* Side-by-side blocks – perfectly aligned */
+        .top-section {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 60px;
+            align-items: flex-start;
         }
-        .logos-container { display: flex; justify-content: center; align-items: flex-end; flex-wrap: wrap; gap: 40px; margin: 40px 0; background-color: rgba(0,0,0,0.7); border-radius: 8px; padding: 20px; }
+        .factsheet-block, .elevator-block {
+            flex: 1;
+            background-color: rgba(0,0,0,0.7);
+            padding: 25px;
+            border-radius: 10px;
+            min-width: 0;
+        }
+        @media (max-width: 900px) {
+            .top-section { flex-direction: column; }
+        }
+
+        /* Rest of the page – restored full content + colors */
+        .logos-container {
+            display: flex; justify-content: center; align-items: flex-end; flex-wrap: wrap;
+            gap: 40px; margin: 60px 0; background-color: rgba(0,0,0,0.7);
+            border-radius: 10px; padding: 30px;
+        }
         .logo-item { text-align: center; }
         .logo-image { width: 350px; height: auto; display: block; }
         .download-button {
-            display: block; margin: 15px auto 0; padding: 12px 24px; background-color: purple; color: white;
-            text-align: center; text-decoration: none; border-radius: 5px; font-weight: bold; width: 150px;
+            display: block; margin: 15px auto 0; padding: 12px 24px;
+            background-color: purple; color: white; text-align: center;
+            text-decoration: none; border-radius: 5px; font-weight: bold; width: 150px;
         }
         .download-button:hover { background-color: #800080; }
-        .videos-container { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin: 40px 0; background-color: rgba(0,0,0,0.7); border-radius: 8px; padding: 20px; }
+
+        .videos-container {
+            display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;
+            margin: 60px 0; background-color: rgba(0,0,0,0.7);
+            border-radius: 10px; padding: 30px;
+        }
         .video-wrapper { flex: 1 1 300px; max-width: 560px; }
         .video-wrapper iframe { width: 100%; height: 315px; border: none; }
         @media (max-width: 768px) { .video-wrapper iframe { height: 200px; } }
+
+        .partners-section, .more-info-section {
+            background-color: rgba(0,0,0,0.7);
+            border-radius: 10px; padding: 30px; margin: 40px 0;
+        }
         .footer-image { text-align: center; margin: 60px auto 20px; }
         .footer-image img { max-width: 100%; height: auto; }
-        /* Add semi-transparent background to partners and more info sections for readability */
-        .partners-section, .more-info-section { background-color: rgba(0,0,0,0.7); border-radius: 8px; padding: 20px; margin: 20px 0; }
     </style>
 </head>
 <body>
@@ -110,12 +124,13 @@
 
     <h1>Hamachi the Psychotic Killer Press Kit</h1>
 
-    <div style="text-align: center; margin-bottom: 40px;">
+    <div style="text-align: center; margin-bottom: 50px;">
         <img src="https://gavinoriley.github.io/assets/2HamachiTitleLogo.png" alt="Main Logo" style="max-width: 100%; height: auto;">
     </div>
 
-    <div class="main-content">
-        <div class="factsheet">
+    <!-- Side-by-side Factsheet & Elevator Pitch / Description / Our Story -->
+    <div class="top-section">
+        <div class="factsheet-block">
             <h2 class="red">Factsheet</h2>
             <p><strong>Official Game Title</strong><br>Hamachi the Psychotic Killer</p>
             <p><strong>Developer</strong><br>Gavin O'Riley<br>Based in Los Angeles, USA<br>Self-Published</p>
@@ -148,24 +163,21 @@
             </p>
         </div>
 
-        <div class="descriptions">
+        <div class="elevator-block">
             <h2 class="red">Elevator Pitch</h2>
-            <p>25 years ago your father climbed the mountain and never came back. Now he’s calling for you with updated graphics, smoother interactions, and quality of life upgrades in the Director’s Cut of Hamachi the Psychotic Killer.</p>
-            <p>A winner of 6 awards and 11 other nominations and selections, Hamachi the Psychotic Killer is an eldritch horror narrative game developed in collaboration with Michael Monello and Nick Braccia, makers of The Blair Witch Project.</p>
-            <p>Searching for her long-lost father, Casey hears news that he may still be alive in the treacherous wilderness of Northwest Canada. She heads to Coldblood Mountain where she discovers evidence of her father's research.</p>
-            <p>With severe weather conditions closing in and evil lurking around her, the journey soon turns from investigation to a desperate attempt to escape. Will she survive to find the truth? Only the tale will tell.</p>
-            <p>Searching for him, you find his mutation experiments and a trail of breadcrumbs leading you up the slope. As night falls you spot someone on a ledge above you, but when you climb up it’s not your father - it’s an abomination.</p>
-            <p>Trapped in the mountain’s maze, you find notes from a deranged ancient explorer offering salvation if you perform a grotesque ritual. The mountain bursts open and you’re transported into childhood memories giving you clues to press forward.</p>
-            <p>At the summit you connect the terrible truth: each of your ancestors must climb this mountain to sacrifice themselves. Something unimaginable deep in the mountain has created this inevitable path for you. The final step is to reunite with your father atop a frozen ladder of corpses into the sky.</p>
-            <p>Hamachi the Psychotic Killer is a cosmic horror narrative experience centered around Casey's search for her missing father in the treacherous mountains of western Canada. Pushing the boundaries of VR immersion, players will be freed from traditional controllers and use Hamachi the Psychotic Killer’s innovative development on hand-tracking to play through the game. A defined set of hand gestures will enable the player to explore the mountain, interact with objects, and climb terrain to unravel the story.</p>
+            <p>Hamachi the Psychotic Killer is a 2D horror platformer that finally lets you embrace the role of the villain. Take control of Hamachi, a cute but utterly deranged killer, and carve your own bloody (or surprisingly merciful) path through a twisted world filled with innocent bystanders, demonic bosses, and law enforcement ready to take you down.</p>
+            <p>Will you indulge in mindless slaughter, spare lives to unlock hidden alliances, or walk the neutral line? Every choice shapes the story and leads to one of three dramatically different endings — plus a secret fourth ending for the truly dedicated.</p>
+            <p>Recruit spared bosses to fight alongside you, evade (or brutally eliminate) the police when your kill count gets too high, unleash temporary invincibility with the chainsaw power-up, and stay topped up with Premium Sushi deliveries from Penelope Pom Pom Pink.</p>
+            <p>With its adorable yet gruesome pixel-art style, energetic soundtrack, and deep morality system, Hamachi the Psychotic Killer delivers a fresh, chaotic twist on the classic platformer formula — all hand-crafted with love by a (mostly) one-person team.</p>
 
             <h2 class="red">Description</h2>
-            <p>Hamachi the Psychotic Killer is a cosmic horror narrative game for hand-tracking VR. You play as Casey, a strong-headed adventurer haunted by her troubled family history. You hear news that your father, a biologist long suspected dead in the treacherous wilderness of Northwest Canada, may still be alive.</p>
-            <p>Searching for him, you find his mutated experiments and track his path, leading you to higher and more dangerous elevations. As night falls, you spot someone on a cliff ledge above you, with bated breath you climb up, but it’s not your father - it’s an unearthly abomination. Trapped in the mountain’s maze, you wonder, is time distorting your reality, or are you going mad with altitude sickness? Collect gruesome clues, decipher cryptic puzzles, perform cult rituals, and travel into family traumas in this mystical slow-burn horror story.</p>
+            <p>In Hamachi the Psychotic Killer, you play as the titular Hamachi — an unhinged, chainsaw-wielding anti-hero on a rampage. Decide the fate of everyone you meet: kill, spare, or ignore them entirely. Your actions dramatically change the world, the story, and which characters will stand with (or against) you.</p>
+            <p>Three main routes — Pacifist, Neutral, and Genocide — plus a hidden ending ensure massive replay value. Excessive killing attracts the police, turning levels into high-stakes chases or all-out wars. Spare certain demonic bosses and they’ll join your party, bringing powerful new abilities.</p>
+            <p>Hand-drawn vibrant pixel art, a pumping original soundtrack, and a twisted sense of humor make this solo-dev passion project stand out in the horror-platformer genre.</p>
 
             <h2 class="red">Our Story</h2>
-            <p>Games by Stitch is a game production company focused on building innovative digital experiences and meaningful audience engagement with new technology. We have been operating since 2007, creating storytelling and gameplay experiences that evolve with the times. Our projects span web, mobile and games that push the boundaries of what’s possible.</p>
-            <p>Games by Stitch is the indie studio division of Stitch Media, focused on creating immersive gaming experiences through interactive technology. Recent releases include Elsewhere Electric (an asynchronous co-operative puzzle game for VR and mobile), Flow Weaver on Meta Quest (a multidimensional VR escape room), and Terrorarium on PC and Tilt Five (a 3D puzzle platformer filled with adorable gore).</p>
+            <p>Hamachi the Psychotic Killer is created by Gavin O'Riley, an independent developer based in Los Angeles, USA. What started as a wild idea — “What if you got to play as the bad guy and the game actually reacted to it?” — has grown into a full-fledged passion project packed with branching paths, recruitable bosses, and plenty of gore (or surprisingly wholesome moments).</p>
+            <p>Built almost entirely by one person, with occasional help from talented freelancers for music and additional art, the game is a love letter to classic platformers, morality systems, and over-the-top villainy.</p>
         </div>
     </div>
 
