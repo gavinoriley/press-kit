@@ -59,7 +59,7 @@
         h2.red { color: #ff3333; margin-top: 0; }
         .factsheet strong { color: #cc33ff; }
         .feature-title { color: #ffff00 !important; font-weight: bold; }
-        a { color: #00bfff; text-decoration: none; }
+        a { color: #00bfff; text-decoration: none; overflow-wrap: break-word; }
         a:hover { text-decoration: underline; }
         .top-section {
             display: flex;
@@ -207,6 +207,27 @@
             font-size: 16px;
             color: #fff;
         }
+        /* Additional responsive styles for phones */
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            h1 { margin-top: 120px; }
+            .navbar { padding: 5px 0; gap: 10px; }
+            .navbar a { font-size: 14px; }
+            .top-section { gap: 20px; }
+            .factsheet-block, .elevator-block { padding: 15px; }
+            .top-section p, .top-section span { font-size: 14px; overflow-wrap: break-word; }
+            .top-section a { word-break: break-all; }
+            .logos-container { gap: 20px; padding: 20px; }
+            .logo-image { width: 250px; }
+            .videos-container { gap: 20px; padding: 20px; }
+            .video-wrapper { max-width: 100%; }
+            .video-wrapper iframe { height: 180px; }
+            .video-caption { font-size: 14px; }
+            .screenshots-container { gap: 20px; padding: 20px; }
+            .carousel { max-width: 100%; }
+            .more-info-section { padding: 20px; }
+            .more-info-section h2, .more-info-section p { font-size: 14px; }
+        }
     </style>
 </head>
 <body>
@@ -292,7 +313,7 @@
     <div class="videos-container">
         <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/QGEuMkrxymU" allowfullscreen></iframe>
-            <p class="video-caption">Prerelease/Overview Trailer</p>
+            <p class="video-caption">Overview Trailer</p>
         </div>
         <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/41vjuRxBotI" allowfullscreen></iframe>
