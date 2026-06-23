@@ -237,6 +237,34 @@
             font-size: 15px;
             color: #ddd;
         }
+        .roblox-render-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            width: 100%;
+        }
+        .roblox-render-container img {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            transition: transform 0.2s ease;
+        }
+        .roblox-render-container img:hover {
+            transform: scale(1.02);
+        }
+        .roblox-text-link {
+            color: #00bfff;
+            text-decoration: none;
+        }
+        .roblox-text-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -259,17 +287,32 @@
         <img src="https://gavinoriley.github.io/assets/dreamhack1.JPG" alt="DreamHack Award" class="award-image" onclick="openModal(this.src)">
         <img src="https://gavinoriley.github.io/assets/awardlaur.png" alt="Awards Graphic" class="award-image" onclick="openModal(this.src)">
     </div>
+    
     <h2 class="red">Roblox 3D Fan Adaptation</h2>
     <div class="videos-container" style="flex-direction: column; align-items: center;">
+        
+        <p style="text-align: center; max-width: 900px; line-height: 1.6; font-size: 16px; margin-bottom: 25px;">
+            Hamachi will be featured as a playable killer in the upcoming Roblox game, The Deep Silence, which is currently in development. 
+            <a href="#" target="_blank" class="roblox-text-link">Click here to view their work!</a>
+            <br><br>
+            <span style="font-style: italic; color: #cccccc; display: block; font-size: 15px;">Note: I am not affiliated with the development of The Deep Silence, nor is The Deep Silence development team affiliated with the development of Hamachi the Psychotic Killer. All credit for The Deep Silence belongs to its development team.</span>
+        </p>
+
         <div class="video-wrapper" style="flex: 0 0 auto; max-width: 900px; width: 100%;">
             <iframe src="https://drive.google.com/file/d/1nj5ezBpLL-szqQZ-ElnoiPgdA0qZFoAp/preview" width="900" height="675" style="width: 100%; height: 675px; border: none;" allowfullscreen></iframe>
-            <p style="text-align: center;">3D community adaptation.</p>
         </div>
+
+        <div class="roblox-render-container">
+            <img src="https://gavinoriley.github.io/assets/Hamachi_RenderAlt.png" alt="Hamachi Roblox Render Alternative" onclick="openModal(this.src)">
+            <img src="https://gavinoriley.github.io/assets/Hamachi_Render.png" alt="Hamachi Roblox Render" onclick="openModal(this.src)">
+        </div>
+
         <div class="video-wrapper" style="max-width: 1000px; width: 100%;">
             <iframe width="100%" height="562" src="https://www.youtube.com/embed/C7lAc6bOt4k" frameborder="0" allowfullscreen style="width: 100%; height: 562px; border: none;"></iframe>
             <p style="text-align: center;">Powerup Theme</p>
         </div>
     </div>
+    
     <h2 class="red">Fan Art (Select examples, there are over 40+ pieces of original fan art now!)</h2>
     <div class="screenshots-container">
         <div class="carousel" id="fanart-carousel">
